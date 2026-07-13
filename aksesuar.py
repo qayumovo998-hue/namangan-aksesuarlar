@@ -39,8 +39,8 @@ from aiogram.types import (
 # Railway'da bularni kodga yozmaymiz, "Variables" bo'limiga qo'shamiz:
 #   BOT_TOKEN = @BotFather'dan olingan token
 #   ADMIN_ID  = habarlar boradigan odamning Telegram ID raqami
-BOT_TOKEN = os.environ["BOT_TOKEN"]
-ADMIN_ID = int(os.environ["ADMIN_ID"])
+BOT_TOKEN = os.environ["8624484954:AAHNhqyEQumSQ0f5O7jLFfyndZhyIGuaQWE"]
+ADMIN_ID = int(os.environ["7359494042"])
 # =====================================
 
 logging.basicConfig(level=logging.INFO)
