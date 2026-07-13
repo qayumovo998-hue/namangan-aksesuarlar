@@ -6,10 +6,9 @@ O'RNATISH:
     pip install aiogram
 
 ISHGA TUSHIRISH:
-    1. Pastda BOT_TOKEN o'rniga @BotFather'dan olingan tokenni yozing
-    2. ADMIN_ID o'rniga habarlar kelishi kerak bo'lgan odamning
-       Telegram ID raqamini yozing (uni @userinfobot orqali bilib olish mumkin)
-    3. python mijoz_bot.py
+    1. BOT_TOKEN va ADMIN_ID ni muhit o'zgaruvchisi (environment variable)
+       sifatida bering (Railway'da Variables bo'limida)
+    2. python mijoz_bot.py
 
 ISHLASH TARTIBI:
     1. Mijoz botga /start bosadi -> bot "qaysi tavar kerak" deb so'raydi
@@ -39,8 +38,8 @@ from aiogram.types import (
 # Railway'da bularni kodga yozmaymiz, "Variables" bo'limiga qo'shamiz:
 #   BOT_TOKEN = @BotFather'dan olingan token
 #   ADMIN_ID  = habarlar boradigan odamning Telegram ID raqami
-BOT_TOKEN = os.environ["8624484954:AAHNhqyEQumSQ0f5O7jLFfyndZhyIGuaQWE"]
-ADMIN_ID = int(os.environ["7359494042"])
+BOT_TOKEN = os.environ["BOT_TOKEN"]
+ADMIN_ID = int(os.environ["ADMIN_ID"])
 # =====================================
 
 logging.basicConfig(level=logging.INFO)
